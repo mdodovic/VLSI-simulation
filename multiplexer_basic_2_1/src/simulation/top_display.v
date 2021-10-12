@@ -3,7 +3,7 @@ module top_display;
     reg i0, i1, s0; 
     wire out; 
     
-    m21_gate m21(i0, i1, s0, out);
+    m21_dataflow m21(i0, i1, s0, out);
     
     initial begin
         i0 = 1'b0;
