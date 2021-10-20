@@ -22,7 +22,8 @@ module top_display;
         i1 = 1'b1;
         
         #10
-        $stop;
+        //$stop;
+        $finish;
     end
 
     always @(out) begin
