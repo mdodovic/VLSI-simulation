@@ -26,8 +26,12 @@ module top_display;
         $finish;
     end
 
-    always @(out) begin
-        $display("Time: %d, Out: %d", $time, out);
+    initial begin
+        $monitor("Time: %d, Out: %d", $time, out);
     end
+
+//    always @(out) begin
+//        $display("Time: %d, Out: %d", $time, out);
+//    end
 
 endmodule
