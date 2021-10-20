@@ -27,7 +27,7 @@ module top_display;
     end
 
     initial begin
-        $monitor("Time: %d, Out: %d", $time, out);
+        $monitor("Time: %2d, Out: %d", $time, out);
     end
 
 //    always @(out) begin
