@@ -3,8 +3,10 @@ module top_display;
     reg i0, i1, s0; 
     wire out; 
     
-    m21_dataflow m21(i0, i1, s0, out);
+    // m21_dataflow m21(i0, i1, s0, out);
+    m21_behavioral m21(.Y(out), .I0(i0), .I1(i1), .S0(s0));
     
+
     initial begin
         i0 = 1'b0;
         i1 = 1'b0;

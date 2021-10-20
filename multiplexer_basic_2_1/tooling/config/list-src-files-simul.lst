@@ -1,2 +1,2 @@
-src/simulation/modules/m21_dataflow.v
+src/simulation/modules/m21_behavioral.v
 src/simulation/top_display.v
