@@ -10,9 +10,9 @@ module dut (
 	always @(posedge clk, negedge rst_n) begin
 
 		if (!rst_n)
-			q = 0;			
+			q <= 0;	// non-blocking assignment
 		else
-			q = d;
+			q <= d;
 
 	end
 
