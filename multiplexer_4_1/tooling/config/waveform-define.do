@@ -4,7 +4,8 @@ add wave -noupdate /testbench/i0
 add wave -noupdate /testbench/i1
 add wave -noupdate /testbench/i2
 add wave -noupdate /testbench/i3
-add wave -noupdate /testbench/s
+add wave -noupdate /testbench/s0
+add wave -noupdate /testbench/s1
 add wave -noupdate /testbench/out
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}
