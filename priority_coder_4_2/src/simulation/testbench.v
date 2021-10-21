@@ -16,7 +16,8 @@ module testbench;
 		i = 4'h2;
 		#10;
 		i = 4'h1;
-				
+		#10;
+		i = 4'h0;				
 		#10 
 		$finish;
 
