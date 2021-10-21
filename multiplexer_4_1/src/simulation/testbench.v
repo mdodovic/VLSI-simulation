@@ -16,11 +16,12 @@ module testbench;
 		#320 $finish;
 	end
 
-	always begin
-		#5 i0 = ~i0; // after 5 units of time, change i0
-	end
+	always #5 i0 = ~i0; // after 5 units of time, change i0
+	always #10 i1 = ~i1; // after 10 units of time, change i1
+	always #20 i2 = ~i2; // after 20 units of time, change i2
+	always #40 i3 = ~i3; // after 40 units of time, change i3
+	always #80 s[0] = ~s[0]; // after 80 units of time, change s[0]
+	always #160 s[1] = ~s[1]; // after 160 units of time, change s[1]
 
-//	always @(out)
-//		$display("Vreme = %0d, Izlaz = %d", $time, out); 
 
 endmodule
