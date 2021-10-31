@@ -26,6 +26,14 @@ module dut (
 			// q <= d; - this is combinational logic
 			q_reg <= q_next; // this is created based on comment in always @(d) block
 							 // we are interested in the last change of q_next on clk change, it is not important what happened between 2 clocks
+
+		// <= is non-blocking assign
+		// in sequential module, this assign should be used, why?
+		// on clk, we need changes to be happened at the same time, not in a sequential order.
+		// //q_reg is 1
+		// q_reg <= 0;
+		// q_next <= q_reg;
+		// after this non-blocking assing, q_req will be 0, BUT q_next will be 1, not 0 because those 2 assigns has happened at the same time
 	end
 
 	always @(d) begin 
