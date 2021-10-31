@@ -3,7 +3,7 @@ module dut (
 );
 
 	input clk, rst_n, d;
-	output q;
+	output /*reg*/ q; // now it is wire, because we will do changes on _reg and _next
 
 	// every signal creates 2 helper
 	reg q_reg, q_next; // _reg and _next helper are going to be chaned
