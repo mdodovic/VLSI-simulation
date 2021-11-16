@@ -19,7 +19,7 @@ module testbench;
 		#1;
 		rst_n = 1'b1;
 
-		repeat(1000) begin
+		repeat(100) begin
 			#10;
 			a = $urandom_range(255);
 			b = $urandom_range(255);
