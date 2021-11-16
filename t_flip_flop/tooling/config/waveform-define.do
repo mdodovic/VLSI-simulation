@@ -1,7 +1,9 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /top_display/???
-
+add wave -noupdate /testbench/clk
+add wave -noupdate /testbench/rst_n
+add wave -noupdate /testbench/t
+add wave -noupdate /testbench/q
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}
 quietly wave cursor active 0
