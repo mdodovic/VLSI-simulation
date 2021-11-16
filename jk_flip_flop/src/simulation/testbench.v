@@ -15,20 +15,13 @@ module testbench;
         #1;
         rst_n = 1'b1;
 
-        #7;
-        k = 1;                
-        #7;
-        j = 1;                
-        #7;
-        k = 0;                
-        #7;
-        j = 1;
-        k = 1;                
-        #7;
-        j = 1;
-        k = 0;                
+        #85;
+        rst_n = 1'b0;
+        #1;
+        rst_n = 1'b1;
 
-        #3;
+
+        #67;
         $finish;    
 
     end
@@ -36,6 +29,22 @@ module testbench;
     always begin
         #5;
         clk = ~clk;
+    end
+
+    always begin
+        repeat(1000) begin
+            #7;
+            k = ~k;                
+            #7;
+            j = ~j;                
+            #7;
+            k = ~k;                
+            #7;
+            j = ~j;
+            k = ~k;                
+            #7;
+            k = ~k;                
+        end
     end
 
 endmodule
