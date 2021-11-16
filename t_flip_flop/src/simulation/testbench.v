@@ -20,7 +20,7 @@ module testbench;
         #1;
         rst_n = 1'b1;
 
-        #13;
+        #44;
         $finish;
 
 
@@ -34,7 +34,7 @@ module testbench;
     always begin
         repeat(1000) begin
             #3;
-            t = $urandom_range(1);
+            t = ~t;
         end
     end
 
