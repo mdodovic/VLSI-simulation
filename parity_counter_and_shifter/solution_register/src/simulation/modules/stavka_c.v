@@ -31,16 +31,19 @@ module stavka_c (
         operation = control[2];
 
         if(enable == 1'b1) begin
-            temporary_operand = data_in;
-            if (double == 1'b1) 
-                temporary_operand = temporary_operand * 2;
-            // else - temporary operand remains data_in
-            
-            if(operation == 1'b0)
-                data_out_next = temporary_operand;
-            else
-                data_out_next = temporary_operand + 1;
 
+            if(operation == 1'b1)
+                data_out_next = data_out_reg + 1;
+            else begin
+
+                temporary_operand = data_in;
+                if (double == 1'b1) 
+                    temporary_operand = temporary_operand * 2;
+                // else - temporary operand remains data_in
+                
+                data_out_next = temporary_operand;
+
+            end
         end
         // else - no change of out register
 
