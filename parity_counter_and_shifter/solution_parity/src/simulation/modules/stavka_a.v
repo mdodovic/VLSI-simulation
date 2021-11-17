@@ -19,7 +19,7 @@ module stavka_a (
 		zero_counter = 0;
 		one_counter = 0;
 
-		for (i = 0; i < 6 ; i = i + 1) begin
+		for (i = 0; i < 7; i = i + 1) begin
 			if(data_in[i] == 1'b0) 
 				zero_counter = zero_counter + 1;
 			else
