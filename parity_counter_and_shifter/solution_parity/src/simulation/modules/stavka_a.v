@@ -15,13 +15,17 @@ module stavka_a (
 	reg desired_output_bit;
 
 	always @(*) begin
-		$display(data_in, control);		
+		// $display("dut_data_in = %b, dut_control = %b", data_in, control);		
+		zero_counter = 0;
+		one_counter = 0;
+
 		for (i = 0; i < 6 ; i = i + 1) begin
 			if(data_in[i] == 1'b0) 
 				zero_counter = zero_counter + 1;
 			else
 				one_counter = one_counter + 1;
 		end
+		// $display("zero_counter = %d, one_counter = %d", zero_counter, one_counter);		
 
 		if(control == 1'b0) begin
 			if(zero_counter > one_counter)
@@ -36,7 +40,7 @@ module stavka_a (
 				desired_output_bit = 1'b0;
 		end
 
-		data_out = {data_in[6], data_in[5], data_in[4], data_in[3], desired_output_bit, data_in[2], data_in[1], data_in[0]};
+		data_out = {data_in[6:4], desired_output_bit, data_in[3:0]};
 
 	end
 
