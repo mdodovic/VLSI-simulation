@@ -1,0 +1,33 @@
+`pragma protect begin_protected
+`pragma protect version = 1
+`pragma protect encrypt_agent = "Model Technology", encrypt_agent_info = "10.4c"
+`pragma protect data_method = "aes128-cbc"
+`pragma protect key_keyowner = "Mentor Graphics Corporation" , key_keyname = "MGC-VERIF-SIM-RSA-1" , key_method = "rsa"
+`pragma protect encoding = (enctype = "base64", line_length = 64, bytes = 128), key_block
+bYxyvY7e1HfpX1zjy4ydunzBLeq2Dzdsa5mT4oXenmsphphkvtasyJjF3J0OU6Pc
+v5k6/9DonPrp6zIIDigVaXMyEpU+Xdgo/jQlo2dQXDWtaOR90SGzLUl2QNnA+s4h
+dWL9yFhI6XLvZnhsSuGk5A0uf7HWhOKVJhyYfsIkthM=
+`pragma protect encoding = (enctype = "base64", line_length = 64, bytes = 1040), data_block
+4wJqNtLo1Bymd9RAsdx3mxt4etdfdzCt4wOswvOLRROF7w4mzyG9s5zsINj1CSV1
+duisV278F31TLiZAMt2sdOefWs6+D7d8EHSgjENaZZ4DvweAAYZ/91OToRu4Y8Xu
+kdHYC3k1genuorfdhb064mbLTWHQLH0J50m4RyZ9innsXFuYcacRLAD5u18jVHK8
+FE5Dk1CckDcR4jjOMJXYGro8pRFNamyPMZ7y2grcGz2Gtad1aVdKx/2SbCHo8dcI
+b1D+An2sPA/NK7pJVqIvNDoqOJ+0W594t71ddI3c1rCaOIshL35uXnYk/XBJJE70
+dnSKE3woPcueN2CRYqz1XaR4IK8t6pZ8t55fo8LECYKKUDyW7HvX3iamVAT6fISN
+KdBcZH5V5uUCKENdxkctTZynVfbmwgYIy4qEt4+bnXFdVajOOPh8j9Ovs2ieYb90
+2WMpWUxWpp2F+5jkz2DhKqA1I3xI0vIL4vZdfM83CDatDCd8nQFSHmqMz1cgFLZs
+X1xi8s2gn0EIeAN8aVc5vuri51j6plgH2+1Wf+HYKSNCISjCAzezU32RHKIDeN8n
+XyeW65Dr/dEmt/cT0FLRLyRvUNtDwTfZqfiCqSouo6wMtFJ5P3MNRXpCBRcS4fNS
+OUKBqs5tQgYKrEPJx1qV6V2sB6zAOrDKCr7hIw3zkaHNipKJ3ruPdLtNeNJWpIUc
+SUyV6ttt70opF/5EDBH4B5dQFgtcOGd4D8cJ88L7qvctnkWXfjO9HCChOc7S/v4k
+LaAkdxUT+0/6tKtfwP24MI87AaezpQv/ZqPLVyGSPXDFGUN0XENhx5/brJxr/A/v
+No6GexUgrmBGWdMCRCXKYCNzNUSILAoZf5EreRT459+iBvPm4QnzHMnV4EITWfs1
+7yyfFBq3JuMbC9aX/iBVV36aQZiMt94zo1sEdYj8Zdq37uPSZjkO+bAN4FzRFfcz
+LOPrXs/fYJoTCJB0zsyYL0XG6jvI3BTCB/5zmsGxQKyqV3Ikt53rgHyW60TqLxfb
+XOe2dt9GW949UdapkpDnll++z5m9NF41OAeS+xvCAqRxjquxitQQ+nSiEdXM25Fh
+g1zLW8446uUVjt25kEC2ItxG/bJxQNLYl/bmctylZPBfZ3Is6BPAXGFAlj8RNXm8
++HsW1U1k56V2UPtjwsVeS5rrMcUYp/Mr0H6PC87A60kPDVB/f4PAsiLZZQyKOVne
+uA8j/n4ha3rdAPakGtLXlJyCcvNn6cvvBgL2vS41wbMjRD++toaumMrFGNUHZxCE
+W5Doz9MGDLQlaqaBwJ/R7c10t4KEM6ImH1Bk8yM2v8JoRewoLRT1oLGmulTZTCmh
+9T2yl/KhKzAzSRk5fgBXqtWCT+Ji/Ia5EY8BY0J3sHY=
+`pragma protect end_protected
