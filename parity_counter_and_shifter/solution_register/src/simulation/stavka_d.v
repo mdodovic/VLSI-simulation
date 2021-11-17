@@ -5,7 +5,7 @@ module stavka_d;
     reg [2:0] control;
     wire [3:0] data_out;
 
-    stavka_d_test register(rst_n, clk, data_in, control, data_out);
+    stavka_c register(rst_n, clk, data_in, control, data_out);
     
     initial begin
         clk = 1'b0;
