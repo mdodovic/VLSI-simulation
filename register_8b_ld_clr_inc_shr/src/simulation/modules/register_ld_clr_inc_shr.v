@@ -38,24 +38,24 @@ module register_ld_clr_inc_shr (rst_n, clk, clr, ld, inc, shr, data_in, data_out
             if(clr == 1'b1) begin
                 // 1
                 data_out_next = 4'h0;
-                right_carry_reg = 1'b0; 
+                right_carry_next = 1'b0; 
             end  
             else begin
                 if(ld == 1'b1) begin
                     // 2 
                     data_out_next = data_in;
-                    right_carry_reg = 1'b0; 
+                    right_carry_next = 1'b0; 
                 end    
                 else begin
                     if(inc == 1'b1) begin
                         // 3
                         data_out_next = data_out_reg + 8'h01;
-                        right_carry_reg = 1'b0; 
+                        right_carry_next = 1'b0; 
                     end                    
                     else begin
                         if(shr == 1'b1) begin
                             // 4
-                            right_carry_reg = data_out_reg[0];                             
+                            right_carry_next = data_out_reg[0];                             
                             data_out_next = data_out_reg >> 1;
                         end
                     end
