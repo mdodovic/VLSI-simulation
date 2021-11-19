@@ -1,2 +1,2 @@
-src/simulation/modules/m21_gate.v
-src/simulation/top_display.v
+src/simulation/modules/full_register_4b.v
+src/simulation/testbench.v
