@@ -1,2 +1,2 @@
-log -r /*
+# log -r /*
 run -all
