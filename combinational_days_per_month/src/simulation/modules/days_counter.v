@@ -5,7 +5,7 @@ module days_counter (
     input x1, x2, x3, x4, x5;
     output reg m28, m29, m30, m31;
 
-    reg [2:0] month_number;
+    reg [3:0] month_number;
 
     always @(*) begin
         
@@ -14,7 +14,7 @@ module days_counter (
         m29 = 1'b0;
         m30 = 1'b0;
         m31 = 1'b0;
-
+        // $display("m = %d", month_number);
         case (month_number)
             4'h1: begin
                 m31 = 1'b1;                
