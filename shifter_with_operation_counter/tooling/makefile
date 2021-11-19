@@ -1,4 +1,4 @@
-SIMUL_TOP_LEVEL_MODULE = stavka_c_test
+SIMUL_TOP_LEVEL_MODULE = stavka_d
 SIMUL_LIB = work
 # 1(yes) -> override timescale
 # 0(no)  -> do NOT override timescale
