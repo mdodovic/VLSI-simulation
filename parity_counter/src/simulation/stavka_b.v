@@ -4,7 +4,7 @@ module stavka_b;
     reg control;
     wire [7:0] data_out;
 
-    stavka_b_test parity_bit_checker(.data_in(data_in), .control(control), .data_out(data_out));
+    stavka_a parity_bit_checker(.data_in(data_in), .control(control), .data_out(data_out));
 
     integer i;
 
