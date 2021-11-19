@@ -14,9 +14,11 @@ module testbench;
         end
         $finish;
     end
-/*
-    always @(input_floor, output_description) begin
-        $display("time = %3d, input_floor = %d, output_description = %b", $time, input_floor, output_description);
+
+    initial begin
+        $monitor("time = %2d, input_floor = %b, output_description = %b", $time, input_floor, output_description);
     end
-*/  
+
+
+ 
 endmodule
