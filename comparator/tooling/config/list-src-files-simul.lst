@@ -1,2 +1,2 @@
-src/simulation/modules/m21_gate.v
-src/simulation/top_display.v
+src/simulation/modules/comparator.v
+src/simulation/testbench.v
