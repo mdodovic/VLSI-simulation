@@ -5,8 +5,9 @@ module stavka_d;
     reg [3:0] data_in;
     reg [2:0] control;
     wire [3:0] data_out;
+    wire [7:0] counter;
 
-    stavka_c doubler_and_shifter(rst_n, clk, data_in, control, data_out);
+    stavka_c doubler_and_shifter(rst_n, clk, data_in, control, data_out, counter);
 
     initial begin
         clk = 1'b0;
@@ -32,7 +33,7 @@ module stavka_d;
     end
 
     initial begin
-        $monitor("time = %3d, dut_data_in = %b, dut_control = %b, dut_data_out = %b", $time, data_in, control, data_out);
+        $monitor("time = %3d, dut_data_in = %b, dut_control = %b, dut_data_out = %b, counter = %2d", $time, data_in, control, data_out, counter);
     end
 
 endmodule
