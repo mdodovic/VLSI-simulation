@@ -8,15 +8,15 @@ module testbench;
     integer i;
 
     initial begin
-        for (i = 0; i < 2**4 ; i = i + 1) begin
+        for (i = -4; i < 12 ; i = i + 1) begin
             input_floor = i;
             #5;
         end
         $finish;
     end
-
-    always @(output_description) begin
+/*
+    always @(input_floor, output_description) begin
         $display("time = %3d, input_floor = %d, output_description = %b", $time, input_floor, output_description);
     end
-    
+*/  
 endmodule
