@@ -14,9 +14,13 @@ module testbench;
 		end		
 		$finish;
 	end
-
-	always @(*) begin
-		$display("time = %3d, x = %b, z = %b", $time, x, z);
+/*
+	always @(z[2], z[1], z[0]) begin
+		$display("time = %3d, x = %b%b%b%b, z = %b%b%b", $time, x[3], x[2], x[1], x[0], z[2], z[1], z[0]);
+	end
+*/
+	initial begin
+		$monitor("time = %3d, x = %b%b%b%b, z = %b%b%b", $time, x[3], x[2], x[1], x[0], z[2], z[1], z[0]);		
 	end
 
 endmodule
