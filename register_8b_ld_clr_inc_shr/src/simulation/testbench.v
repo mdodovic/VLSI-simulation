@@ -44,5 +44,10 @@ module testbench;
         #5;
         clk = ~clk;
     end
+
+    initial begin
+        $monitor("time = %4d, clr = %b, ld = %b, inc = %b, shr = %b, data_in = %b, data_out = %b, right_carry = %b", 
+                $time, clr, ld, inc, shr, data_in, data_out, right_carry);
+    end
     
 endmodule
